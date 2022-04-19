@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-lg-5 offset-lg-1 my-5">
+  <h2>Courses</h2>
+  <p class= ""><strong>PLease fill the form below:</strong></p>
+  <form action="">
+    <p>
+      <label for="title">Title:</label>
+      <input type="text" id="title" class="form-control" name="title" size="40" value="">
+    </p>
+    <p>
+      <label for="stream">Stream:</label>
+      <input type="text" id="stream" class="form-control" name="stream" value="">
+    </p>
+    <p>
+      <label for="type">Type:</label>
+      <input type="text" id="type" class="form-control" name="type" value="">
+    </p>
+    <p><label for="start_date">Start_date:</label>
+      <input type="date" id="start_date" class="form-control" name="start_date" min="2022-02-01" value="">
+    </p>
+    <p><label for="end_date">End_date:</label>
+      <input type="date" id="end_date" class="form-control" name="end_date" max= "2022-05-05 "value="">
+    </p>
+
+    <button type="submit" id="submit">Add</button>&nbsp;
+    <button type="submit" id="update" hidden>Update</button>&nbsp;
+    <button type="reset" id = "reset">Reset</button>
+
+  </form>
+  <div id="courses"></div>
+  <script src="courses.js"></script>
+</body>
+
+</html>
+
